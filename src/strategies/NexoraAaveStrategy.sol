@@ -18,7 +18,5 @@ contract NexoraAaveStrategy is Ownable {
         strategy = StrategyManager(_strategy);
     }
 
-    function depositToAaveStrategy() public onlyOwner {
-        
-    }
+    function depositToAaveStrategy() public onlyOwner {}
 }

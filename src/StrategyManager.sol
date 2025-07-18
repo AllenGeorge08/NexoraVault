@@ -8,7 +8,7 @@ import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol
 
 contract StrategyManager is Ownable {
     NexoraUSDCVault vault;
-    
+
     event AllFundsWithdrawn(address, uint256);
 
     using SafeERC20 for IERC20;

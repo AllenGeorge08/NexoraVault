@@ -62,8 +62,6 @@ contract NexoraUSDCVault is ERC4626, Ownable, Pausable {
     }
 
     // User  functions
-
-   
     function deposit(uint256 assets, address to) public virtual override whenNotPaused returns (uint256 shares) {
         shares = super.deposit(assets, to);
         totalUSDCDeposited += assets;
