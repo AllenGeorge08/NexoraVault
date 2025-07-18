@@ -8,9 +8,9 @@ import {Pausable} from "@openzeppelin/contracts/utils/Pausable.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-
 contract NexoraUSDCVault is ERC4626, Ownable, Pausable {
     using SafeERC20 for IERC20;
+
     address public strategyManager;
     address private immutable _asset;
     bool loopingWindowOver;
